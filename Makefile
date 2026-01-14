@@ -5,7 +5,8 @@ pdf: $(FILES)
 	pdflatex $(FILES)
 	pdflatex $(FILES)
 	#acroread $(FILE).pdf
-	evince-previewer $(FILE).pdf &
+	#evince-previewer $(FILE).pdf &
+	xpdf $(FILE).pdf &
 
 latex:
 	latex $(FILE).tex
